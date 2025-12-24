@@ -1,0 +1,12 @@
+CREATE DATABASE WebDemo;
+GO
+USE WebDemo;
+GO
+
+CREATE TABLE Messages (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    TextMessage NVARCHAR(255) NOT NULL
+);
+
+INSERT INTO Messages (TextMessage)
+VALUES (N'Подключение к базе данных успешно');
